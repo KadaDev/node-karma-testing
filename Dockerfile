@@ -1,6 +1,8 @@
 FROM mhart/alpine-node:latest
 
-RUN apk add --no-cache xvfb chromium firefox
+RUN apk add --no-cache xvfb git bash
+RUN apk add --no-cache chromium
+RUN apk add --no-cache firefox-esr
 
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
