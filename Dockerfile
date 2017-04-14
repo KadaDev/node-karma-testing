@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:latest
 
-RUN apk add --no-cache xvfb git bash
+RUN apk add --no-cache xvfb git bash dbus
 RUN apk add --no-cache chromium
 RUN apk add --no-cache firefox-esr
 
