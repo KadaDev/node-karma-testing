@@ -1,6 +1,6 @@
-FROM mhart/alpine-node:latest
+FROM kadadev/node-small:latest
 
-RUN apk add --no-cache xvfb git bash dbus ttf-freefont udev
+RUN apk add --no-cache xvfb dbus ttf-freefont udev openjdk8-jre-base
 RUN apk add --no-cache chromium
 RUN apk add --no-cache firefox-esr
 
