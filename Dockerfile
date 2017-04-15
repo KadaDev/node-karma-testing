@@ -2,7 +2,7 @@ FROM kadadev/node-small:latest
 
 RUN apk add --no-cache xvfb dbus ttf-freefont udev openjdk8-jre-base
 RUN apk add --no-cache chromium chromium-chromedriver
-RUN apk add --no-cache firefox
+RUN apk add --no-cache firefox-esr
 
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
