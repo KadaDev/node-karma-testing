@@ -2,8 +2,7 @@ FROM kadadev/node-small:latest
 
 RUN apk add --no-cache xvfb dbus ttf-freefont udev openjdk8-jre-base
 RUN apk add --no-cache chromium chromium-chromedriver
-RUN apk add --no-cache libevent hunspell icu-libs 
-RUN apk add --no-cache firefox --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
+RUN apk add --no-cache libevent hunspell icu-libs firefox --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
 
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
